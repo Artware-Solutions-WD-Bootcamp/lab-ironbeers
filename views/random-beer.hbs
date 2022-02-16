@@ -1,0 +1,14 @@
+{{!-- responseFromAPI --}}
+{{!-- image, name, description, tagline, food pairing and brewer tips --}}
+{{#each responseFromAPI}}
+<h2>{{this.name}}</h2>
+<img src="{{this.image_url}}" alt="beer image" width="100px">
+<p>{{this.description}}</p>
+<h5>Tagline: {{this.tagline}}</h5>
+<h2>Food pairing</h2>
+<p>
+{{this.food_pairing}}
+</p>
+<h2>Brewer tips</h2>
+<p>{{this.brewers_tips}}</p>
+{{/each}}
