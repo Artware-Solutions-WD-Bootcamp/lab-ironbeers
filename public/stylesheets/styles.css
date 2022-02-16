@@ -9,69 +9,106 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  height: 90vh;
+  height: 80vh;
 }
+
 nav {
   display: flex;
-  margin-top: 0px;
+  top: 0;
+  position: fixed;
   background-color: #2081c3;
-  height: 50px;
+  height: 100px;
+  width: 100%;
 }
+
 ul {
   display: flex;
   align-items: flex-start;
-
-  /*justify-content: space-around;*/
 }
+
+footer{
+  display: flex;
+  bottom: 0px;
+  height: 30px;
+  background-color: #0a2c42;
+  position: fixed;
+  width: 100%;
+  color: white;
+  padding: 30px;
+  font-size: 32px;
+}
+
 li {
   display: flex;
   align-content: center;
-  margin: 0px 10px;
-}
-nav a{
-  text-decoration: none;
-  color: #f7f9f9;
-  font-size: 1rem;
+  margin: 20px 20px;
 }
 
-div a{
+nav a, .main button a {
+  text-decoration: none;
+  color: #f7f9f9;
+  font-size: 1.5rem;
+}
+
+div a {
   text-decoration: none;
   color: black;
   font-size: 1rem;
 }
 
-h3{
+h3 {
   color: #bfbfbf;
 }
-.container{
+
+.container {
   width: 80%;
-  margin: 10px auto;
+  margin: 200px auto;
 }
-#beer-container{
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main button{
+  margin: 20px;
+  background-color: #2081c3;
+  padding: 10px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.main img{
+  margin-top: 50px;
+}
+
+#beer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-#beer{
+
+#beer {
   width: 400px;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: space-around;
 }
 
-.beer-single-text{
+.beer-single-text {
   width: 70%;
 }
 
-#beer-single{
+#beer-single {
   display: flex;
 }
 
-#beer-single img{
+#beer-single img {
   margin-right: 20px;
   width: 100px;
 }

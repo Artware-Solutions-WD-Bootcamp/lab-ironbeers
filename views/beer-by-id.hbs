@@ -1,12 +1,18 @@
+  <div id="beer-single">
 {{#each beerFromAPI}}
-<h2>{{this.name}}</h2>
 <img src="{{this.image_url}}" alt="beer image" width="100px">
+<div class="beer-single-text">
+  <h2>{{this.name}}</h2>
 <p>{{this.description}}</p>
 <h5>Tagline: {{this.tagline}}</h5>
 <h2>Food pairing</h2>
 <p>
-{{this.food_pairing}}
+  {{#each this.food_pairing}}
+  <li>{{this}}</li>
+  {{/each}}
 </p>
 <h2>Brewer tips</h2>
 <p>{{this.brewers_tips}}</p>
+</div>
 {{/each}}
+</div>
